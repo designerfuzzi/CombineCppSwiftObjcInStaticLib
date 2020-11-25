@@ -4,6 +4,6 @@ contains two test applications which integrate a fictionaly yet useless static l
 
 But it shows how to code Swift in a static lib which combines Objective-C and C++ (plus Objective-C++).
 
-The **iOS test app** integrates accordingly the Hub_lib and a `UIButton` will invoke a pre allocated *Hub_lib* class object to show it does realy fire up swift code from the library. So it also shows swift <-> objc <-> objc++ -> c++ bridging (use of bridging headers) and combining all together.
+The **iOS test app** integrates accordingly the Hub_lib and a `UIButton` will invoke a pre allocated *Hub_lib* class object to show it does realy fire up swift code from the library.<br>So it also shows **swift <-> objc <-> objc++ -> c++** bridging (use of bridging headers) and combining all together.
 
 The **macOS test app** does same but additional integrates a `ThreadManagerExample` that runs a thread which will show that `NotificationCenter`s is thread safe. It will catch what bundle (app in workspace) was focused at last and also keep its window allways in front. To indicate it is working, the window shows the App-Icon of the app which was focused at last.
