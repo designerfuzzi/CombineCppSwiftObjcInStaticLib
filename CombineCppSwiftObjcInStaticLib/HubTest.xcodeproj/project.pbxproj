@@ -1,0 +1,817 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		019D87BD256C675E00940830 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 019D87BC256C675E00940830 /* AppDelegate.m */; };
+		019D87C0256C675E00940830 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 019D87BF256C675E00940830 /* ViewController.m */; };
+		019D87C2256C675F00940830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 019D87C1256C675F00940830 /* Assets.xcassets */; };
+		019D87C5256C675F00940830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 019D87C3256C675F00940830 /* Main.storyboard */; };
+		019D87C8256C675F00940830 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 019D87C7256C675F00940830 /* main.m */; };
+		019D87D2256C67C300940830 /* Hub_lib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 01F7738D25688A9400AC5263 /* Hub_lib.mm */; };
+		019D87D3256C67C300940830 /* BLE_Central.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F7739425688B2600AC5263 /* BLE_Central.swift */; };
+		019D87D4256C67C300940830 /* HubCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = 01F773CF256B029300AC5263 /* HubCPP.mm */; };
+		019D87D7256C67C300940830 /* Hub_lib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01F7738C25688A9400AC5263 /* Hub_lib.h */; };
+		019D87DC256C683E00940830 /* libHub_lib_mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 019D87DB256C67C300940830 /* libHub_lib_mac.a */; };
+		019D87E1256C69A300940830 /* MakeProjectSwiftCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019D87E0256C69A300940830 /* MakeProjectSwiftCompatible.swift */; };
+		019D87E4256C6BDA00940830 /* BLE.mm in Sources */ = {isa = PBXBuildFile; fileRef = 019D87E2256C6BDA00940830 /* BLE.mm */; };
+		019D87E8256C760500940830 /* ThreadManagerExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 019D87E7256C760500940830 /* ThreadManagerExample.m */; };
+		01F77371256889EB00AC5263 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F77370256889EB00AC5263 /* AppDelegate.m */; };
+		01F77374256889EB00AC5263 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F77373256889EB00AC5263 /* SceneDelegate.m */; };
+		01F77377256889EB00AC5263 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F77376256889EB00AC5263 /* ViewController.m */; };
+		01F7737A256889EB00AC5263 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01F77378256889EB00AC5263 /* Main.storyboard */; };
+		01F7737C256889EC00AC5263 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01F7737B256889EC00AC5263 /* Assets.xcassets */; };
+		01F7737F256889EC00AC5263 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01F7737D256889EC00AC5263 /* LaunchScreen.storyboard */; };
+		01F77382256889EC00AC5263 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F77381256889EC00AC5263 /* main.m */; };
+		01F7738E25688A9400AC5263 /* Hub_lib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 01F7738D25688A9400AC5263 /* Hub_lib.mm */; };
+		01F7738F25688A9400AC5263 /* Hub_lib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01F7738C25688A9400AC5263 /* Hub_lib.h */; };
+		01F7739525688B2600AC5263 /* BLE_Central.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F7739425688B2600AC5263 /* BLE_Central.swift */; };
+		01F7739825688C1F00AC5263 /* BLE.mm in Sources */ = {isa = PBXBuildFile; fileRef = 01F7739725688C1F00AC5263 /* BLE.mm */; };
+		01F7739925688F3200AC5263 /* libHub_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F7738A25688A9400AC5263 /* libHub_lib.a */; };
+		01F7739E2568976900AC5263 /* MakeProjectSwiftCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F7739D2568976900AC5263 /* MakeProjectSwiftCompatible.swift */; };
+		01F773D0256B029300AC5263 /* HubCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = 01F773CF256B029300AC5263 /* HubCPP.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		019D87DD256C683E00940830 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01F773012567394A00AC5263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 019D87D0256C67C300940830;
+			remoteInfo = "Hub_lib mac";
+		};
+		01F7739A25688F3200AC5263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01F773012567394A00AC5263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01F7738925688A9400AC5263;
+			remoteInfo = Hub_lib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		019D87D6256C67C300940830 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				019D87D7256C67C300940830 /* Hub_lib.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01F7738825688A9400AC5263 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				01F7738F25688A9400AC5263 /* Hub_lib.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		019D87B9256C675E00940830 /* sim backend Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sim backend Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		019D87BB256C675E00940830 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		019D87BC256C675E00940830 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		019D87BE256C675E00940830 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		019D87BF256C675E00940830 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		019D87C1256C675F00940830 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		019D87C4256C675F00940830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		019D87C6256C675F00940830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		019D87C7256C675F00940830 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		019D87C9256C675F00940830 /* sim_backend_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sim_backend_Mac.entitlements; sourceTree = "<group>"; };
+		019D87DB256C67C300940830 /* libHub_lib_mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHub_lib_mac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		019D87DF256C69A300940830 /* sim backend Mac-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sim backend Mac-Bridging-Header.h"; sourceTree = "<group>"; };
+		019D87E0256C69A300940830 /* MakeProjectSwiftCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeProjectSwiftCompatible.swift; sourceTree = "<group>"; };
+		019D87E2256C6BDA00940830 /* BLE.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BLE.mm; sourceTree = "<group>"; };
+		019D87E3256C6BDA00940830 /* BLE.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BLE.hh; sourceTree = "<group>"; };
+		019D87E6256C760500940830 /* ThreadManagerExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadManagerExample.h; sourceTree = "<group>"; };
+		019D87E7256C760500940830 /* ThreadManagerExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadManagerExample.m; sourceTree = "<group>"; };
+		01F7736D256889EB00AC5263 /* sim backend UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sim backend UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01F7736F256889EB00AC5263 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		01F77370256889EB00AC5263 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		01F77372256889EB00AC5263 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		01F77373256889EB00AC5263 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		01F77375256889EB00AC5263 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		01F77376256889EB00AC5263 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		01F77379256889EB00AC5263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01F7737B256889EC00AC5263 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01F7737E256889EC00AC5263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01F77380256889EC00AC5263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01F77381256889EC00AC5263 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		01F7738A25688A9400AC5263 /* libHub_lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHub_lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		01F7738C25688A9400AC5263 /* Hub_lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hub_lib.h; sourceTree = "<group>"; };
+		01F7738D25688A9400AC5263 /* Hub_lib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Hub_lib.mm; sourceTree = "<group>"; };
+		01F7739325688B2500AC5263 /* Hub_lib-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hub_lib-Bridging-Header.h"; sourceTree = "<group>"; };
+		01F7739425688B2600AC5263 /* BLE_Central.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLE_Central.swift; sourceTree = "<group>"; };
+		01F7739625688C1F00AC5263 /* BLE.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BLE.hh; sourceTree = "<group>"; };
+		01F7739725688C1F00AC5263 /* BLE.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BLE.mm; sourceTree = "<group>"; };
+		01F7739C2568976800AC5263 /* sim backend UI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sim backend UI-Bridging-Header.h"; sourceTree = "<group>"; };
+		01F7739D2568976900AC5263 /* MakeProjectSwiftCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeProjectSwiftCompatible.swift; sourceTree = "<group>"; };
+		01F773CE256B029300AC5263 /* HubCPP.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = HubCPP.h; sourceTree = "<group>"; };
+		01F773CF256B029300AC5263 /* HubCPP.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HubCPP.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		019D87B6256C675E00940830 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019D87DC256C683E00940830 /* libHub_lib_mac.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		019D87D5256C67C300940830 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01F7736A256889EB00AC5263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01F7739925688F3200AC5263 /* libHub_lib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01F7738725688A9400AC5263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		019D87BA256C675E00940830 /* sim backend Mac */ = {
+			isa = PBXGroup;
+			children = (
+				019D87BB256C675E00940830 /* AppDelegate.h */,
+				019D87BC256C675E00940830 /* AppDelegate.m */,
+				019D87BE256C675E00940830 /* ViewController.h */,
+				019D87BF256C675E00940830 /* ViewController.m */,
+				019D87C1256C675F00940830 /* Assets.xcassets */,
+				019D87C3256C675F00940830 /* Main.storyboard */,
+				019D87C6256C675F00940830 /* Info.plist */,
+				019D87C7256C675F00940830 /* main.m */,
+				019D87E3256C6BDA00940830 /* BLE.hh */,
+				019D87E2256C6BDA00940830 /* BLE.mm */,
+				019D87C9256C675F00940830 /* sim_backend_Mac.entitlements */,
+				019D87E0256C69A300940830 /* MakeProjectSwiftCompatible.swift */,
+				019D87DF256C69A300940830 /* sim backend Mac-Bridging-Header.h */,
+				019D87E6256C760500940830 /* ThreadManagerExample.h */,
+				019D87E7256C760500940830 /* ThreadManagerExample.m */,
+			);
+			path = "sim backend Mac";
+			sourceTree = "<group>";
+		};
+		01F773002567394A00AC5263 = {
+			isa = PBXGroup;
+			children = (
+				01F7736E256889EB00AC5263 /* sim backend UI */,
+				01F7738B25688A9400AC5263 /* Hub_lib */,
+				019D87BA256C675E00940830 /* sim backend Mac */,
+				01F7730A2567394A00AC5263 /* Products */,
+				01F7733225673A9700AC5263 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		01F7730A2567394A00AC5263 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01F7736D256889EB00AC5263 /* sim backend UI.app */,
+				01F7738A25688A9400AC5263 /* libHub_lib.a */,
+				019D87B9256C675E00940830 /* sim backend Mac.app */,
+				019D87DB256C67C300940830 /* libHub_lib_mac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01F7733225673A9700AC5263 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01F7736E256889EB00AC5263 /* sim backend UI */ = {
+			isa = PBXGroup;
+			children = (
+				01F7736F256889EB00AC5263 /* AppDelegate.h */,
+				01F77370256889EB00AC5263 /* AppDelegate.m */,
+				01F77372256889EB00AC5263 /* SceneDelegate.h */,
+				01F77373256889EB00AC5263 /* SceneDelegate.m */,
+				01F77375256889EB00AC5263 /* ViewController.h */,
+				01F77376256889EB00AC5263 /* ViewController.m */,
+				01F77378256889EB00AC5263 /* Main.storyboard */,
+				01F7737B256889EC00AC5263 /* Assets.xcassets */,
+				01F7737D256889EC00AC5263 /* LaunchScreen.storyboard */,
+				01F77380256889EC00AC5263 /* Info.plist */,
+				01F77381256889EC00AC5263 /* main.m */,
+				01F7739625688C1F00AC5263 /* BLE.hh */,
+				01F7739725688C1F00AC5263 /* BLE.mm */,
+				01F7739D2568976900AC5263 /* MakeProjectSwiftCompatible.swift */,
+				01F7739C2568976800AC5263 /* sim backend UI-Bridging-Header.h */,
+			);
+			path = "sim backend UI";
+			sourceTree = "<group>";
+		};
+		01F7738B25688A9400AC5263 /* Hub_lib */ = {
+			isa = PBXGroup;
+			children = (
+				01F7738C25688A9400AC5263 /* Hub_lib.h */,
+				01F7738D25688A9400AC5263 /* Hub_lib.mm */,
+				01F773CE256B029300AC5263 /* HubCPP.h */,
+				01F773CF256B029300AC5263 /* HubCPP.mm */,
+				01F7739425688B2600AC5263 /* BLE_Central.swift */,
+				01F7739325688B2500AC5263 /* Hub_lib-Bridging-Header.h */,
+			);
+			path = Hub_lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		019D87B8256C675E00940830 /* sim backend Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 019D87CC256C675F00940830 /* Build configuration list for PBXNativeTarget "sim backend Mac" */;
+			buildPhases = (
+				019D87B5256C675E00940830 /* Sources */,
+				019D87B6256C675E00940830 /* Frameworks */,
+				019D87B7256C675E00940830 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				019D87DE256C683E00940830 /* PBXTargetDependency */,
+			);
+			name = "sim backend Mac";
+			productName = "sim backend Mac";
+			productReference = 019D87B9256C675E00940830 /* sim backend Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		019D87D0256C67C300940830 /* Hub_lib_mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 019D87D8256C67C300940830 /* Build configuration list for PBXNativeTarget "Hub_lib_mac" */;
+			buildPhases = (
+				019D87D1256C67C300940830 /* Sources */,
+				019D87D5256C67C300940830 /* Frameworks */,
+				019D87D6256C67C300940830 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hub_lib_mac;
+			productName = Hub_lib;
+			productReference = 019D87DB256C67C300940830 /* libHub_lib_mac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		01F7736C256889EB00AC5263 /* sim backend UI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01F77383256889EC00AC5263 /* Build configuration list for PBXNativeTarget "sim backend UI" */;
+			buildPhases = (
+				01F77369256889EB00AC5263 /* Sources */,
+				01F7736A256889EB00AC5263 /* Frameworks */,
+				01F7736B256889EB00AC5263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01F7739B25688F3200AC5263 /* PBXTargetDependency */,
+			);
+			name = "sim backend UI";
+			productName = "sim backend UI";
+			productReference = 01F7736D256889EB00AC5263 /* sim backend UI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01F7738925688A9400AC5263 /* Hub_lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01F7739025688A9400AC5263 /* Build configuration list for PBXNativeTarget "Hub_lib" */;
+			buildPhases = (
+				01F7738625688A9400AC5263 /* Sources */,
+				01F7738725688A9400AC5263 /* Frameworks */,
+				01F7738825688A9400AC5263 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hub_lib;
+			productName = Hub_lib;
+			productReference = 01F7738A25688A9400AC5263 /* libHub_lib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01F773012567394A00AC5263 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Frank Hofmann";
+				TargetAttributes = {
+					019D87B8256C675E00940830 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+					01F7736C256889EB00AC5263 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+					01F7738925688A9400AC5263 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+				};
+			};
+			buildConfigurationList = 01F773042567394A00AC5263 /* Build configuration list for PBXProject "HubTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01F773002567394A00AC5263;
+			productRefGroup = 01F7730A2567394A00AC5263 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01F7736C256889EB00AC5263 /* sim backend UI */,
+				01F7738925688A9400AC5263 /* Hub_lib */,
+				019D87D0256C67C300940830 /* Hub_lib_mac */,
+				019D87B8256C675E00940830 /* sim backend Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		019D87B7256C675E00940830 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019D87C2256C675F00940830 /* Assets.xcassets in Resources */,
+				019D87C5256C675F00940830 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01F7736B256889EB00AC5263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01F7737F256889EC00AC5263 /* LaunchScreen.storyboard in Resources */,
+				01F7737C256889EC00AC5263 /* Assets.xcassets in Resources */,
+				01F7737A256889EB00AC5263 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		019D87B5256C675E00940830 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019D87E8256C760500940830 /* ThreadManagerExample.m in Sources */,
+				019D87E4256C6BDA00940830 /* BLE.mm in Sources */,
+				019D87C0256C675E00940830 /* ViewController.m in Sources */,
+				019D87C8256C675F00940830 /* main.m in Sources */,
+				019D87E1256C69A300940830 /* MakeProjectSwiftCompatible.swift in Sources */,
+				019D87BD256C675E00940830 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		019D87D1256C67C300940830 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019D87D2256C67C300940830 /* Hub_lib.mm in Sources */,
+				019D87D3256C67C300940830 /* BLE_Central.swift in Sources */,
+				019D87D4256C67C300940830 /* HubCPP.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01F77369256889EB00AC5263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01F7739E2568976900AC5263 /* MakeProjectSwiftCompatible.swift in Sources */,
+				01F77377256889EB00AC5263 /* ViewController.m in Sources */,
+				01F77371256889EB00AC5263 /* AppDelegate.m in Sources */,
+				01F77382256889EC00AC5263 /* main.m in Sources */,
+				01F7739825688C1F00AC5263 /* BLE.mm in Sources */,
+				01F77374256889EB00AC5263 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01F7738625688A9400AC5263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01F7738E25688A9400AC5263 /* Hub_lib.mm in Sources */,
+				01F7739525688B2600AC5263 /* BLE_Central.swift in Sources */,
+				01F773D0256B029300AC5263 /* HubCPP.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		019D87DE256C683E00940830 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 019D87D0256C67C300940830 /* Hub_lib_mac */;
+			targetProxy = 019D87DD256C683E00940830 /* PBXContainerItemProxy */;
+		};
+		01F7739B25688F3200AC5263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01F7738925688A9400AC5263 /* Hub_lib */;
+			targetProxy = 01F7739A25688F3200AC5263 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		019D87C3256C675F00940830 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				019D87C4256C675F00940830 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01F77378256889EB00AC5263 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01F77379256889EB00AC5263 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01F7737D256889EC00AC5263 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01F7737E256889EC00AC5263 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		019D87CA256C675F00940830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "sim backend Mac/sim_backend_Mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "sim backend Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.darkfader.sim-backend-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "sim backend Mac/sim backend Mac-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		019D87CB256C675F00940830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "sim backend Mac/sim_backend_Mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "sim backend Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.darkfader.sim-backend-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "sim backend Mac/sim backend Mac-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		019D87D9256C67C300940830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRIP_SWIFT_SYMBOLS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Hub_lib/Hub_lib-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		019D87DA256C67C300940830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRIP_SWIFT_SYMBOLS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Hub_lib/Hub_lib-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		01F773202567394C00AC5263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		01F773212567394C00AC5263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01F77384256889EC00AC5263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4VRDRVAVHD;
+				INFOPLIST_FILE = "sim backend UI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.darkfader.sim-backend-UI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_SWIFT_SYMBOLS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "sim backend UI/sim backend UI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01F77385256889EC00AC5263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4VRDRVAVHD;
+				INFOPLIST_FILE = "sim backend UI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.darkfader.sim-backend-UI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_SWIFT_SYMBOLS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "sim backend UI/sim backend UI-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		01F7739125688A9400AC5263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_SWIFT_SYMBOLS = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Hub_lib/Hub_lib-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01F7739225688A9400AC5263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_SWIFT_SYMBOLS = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Hub_lib/Hub_lib-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		019D87CC256C675F00940830 /* Build configuration list for PBXNativeTarget "sim backend Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				019D87CA256C675F00940830 /* Debug */,
+				019D87CB256C675F00940830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		019D87D8256C67C300940830 /* Build configuration list for PBXNativeTarget "Hub_lib_mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				019D87D9256C67C300940830 /* Debug */,
+				019D87DA256C67C300940830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01F773042567394A00AC5263 /* Build configuration list for PBXProject "HubTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01F773202567394C00AC5263 /* Debug */,
+				01F773212567394C00AC5263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01F77383256889EC00AC5263 /* Build configuration list for PBXNativeTarget "sim backend UI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01F77384256889EC00AC5263 /* Debug */,
+				01F77385256889EC00AC5263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01F7739025688A9400AC5263 /* Build configuration list for PBXNativeTarget "Hub_lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01F7739125688A9400AC5263 /* Debug */,
+				01F7739225688A9400AC5263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01F773012567394A00AC5263 /* Project object */;
+}

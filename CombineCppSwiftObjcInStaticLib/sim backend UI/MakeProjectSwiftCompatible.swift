@@ -1,0 +1,6 @@
+//
+//  MakeProjectSwiftCompatible.swift
+//
+
+import Foundation
+
