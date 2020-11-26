@@ -20,6 +20,7 @@ var centralManager: CBCentralManager = CBCentralManager()
 
 class BLE_Central: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     
+    // conform to CBCentralManagerDelegate Protocol
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         os_log("centralManagerDidUpdateState")
     }
@@ -36,8 +37,19 @@ class BLE_Central: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     @objc public func run_central()
     {
         os_log("run_central")
+        
+        // test and use some c++ function declared in
+        // projectname-Bridging-Header.h with binding wrapper in ExampleWrapper.cpp
+        os_log("%u", myCppFunction("123456"))
+        
+        // swift string as argument to c++ function
+        // returns (const char*), becomes UnsafePointer<Int8>!
+        // converting to cString into swift String
+        let s = String(cString: getInCppAndOutOfCpp("Hello World"))
+        os_log("%s",s)
+        
         // do crazy stuff with centralManager here
-        //os_log("started")
+        
     }
     
 }
