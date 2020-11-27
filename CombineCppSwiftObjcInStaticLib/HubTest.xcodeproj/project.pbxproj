@@ -20,6 +20,10 @@
 		019D87E1256C69A300940830 /* MakeProjectSwiftCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019D87E0256C69A300940830 /* MakeProjectSwiftCompatible.swift */; };
 		019D87E4256C6BDA00940830 /* BLE.mm in Sources */ = {isa = PBXBuildFile; fileRef = 019D87E2256C6BDA00940830 /* BLE.mm */; };
 		019D87E8256C760500940830 /* ThreadManagerExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 019D87E7256C760500940830 /* ThreadManagerExample.m */; };
+		019D880D257098EC00940830 /* Example.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 019D880A257098EC00940830 /* Example.cpp */; };
+		019D880E257098EC00940830 /* Example.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 019D880A257098EC00940830 /* Example.cpp */; };
+		019D880F257098EC00940830 /* ExampleWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 019D880C257098EC00940830 /* ExampleWrapper.cpp */; };
+		019D8810257098EC00940830 /* ExampleWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 019D880C257098EC00940830 /* ExampleWrapper.cpp */; };
 		01F77371256889EB00AC5263 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F77370256889EB00AC5263 /* AppDelegate.m */; };
 		01F77374256889EB00AC5263 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F77373256889EB00AC5263 /* SceneDelegate.m */; };
 		01F77377256889EB00AC5263 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F77376256889EB00AC5263 /* ViewController.m */; };
@@ -94,6 +98,9 @@
 		019D87E3256C6BDA00940830 /* BLE.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BLE.hh; sourceTree = "<group>"; };
 		019D87E6256C760500940830 /* ThreadManagerExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadManagerExample.h; sourceTree = "<group>"; };
 		019D87E7256C760500940830 /* ThreadManagerExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadManagerExample.m; sourceTree = "<group>"; };
+		019D880A257098EC00940830 /* Example.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Example.cpp; sourceTree = "<group>"; };
+		019D880B257098EC00940830 /* Example.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Example.hpp; sourceTree = "<group>"; };
+		019D880C257098EC00940830 /* ExampleWrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleWrapper.cpp; sourceTree = "<group>"; };
 		01F7736D256889EB00AC5263 /* sim backend UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sim backend UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F7736F256889EB00AC5263 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		01F77370256889EB00AC5263 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -234,6 +241,9 @@
 				01F773CE256B029300AC5263 /* HubCPP.h */,
 				01F773CF256B029300AC5263 /* HubCPP.mm */,
 				01F7739425688B2600AC5263 /* BLE_Central.swift */,
+				019D880A257098EC00940830 /* Example.cpp */,
+				019D880B257098EC00940830 /* Example.hpp */,
+				019D880C257098EC00940830 /* ExampleWrapper.cpp */,
 				01F7739325688B2500AC5263 /* Hub_lib-Bridging-Header.h */,
 			);
 			path = Hub_lib;
@@ -397,8 +407,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				019D880E257098EC00940830 /* Example.cpp in Sources */,
 				019D87D2256C67C300940830 /* Hub_lib.mm in Sources */,
 				019D87D3256C67C300940830 /* BLE_Central.swift in Sources */,
+				019D8810257098EC00940830 /* ExampleWrapper.cpp in Sources */,
 				019D87D4256C67C300940830 /* HubCPP.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,8 +432,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				019D880D257098EC00940830 /* Example.cpp in Sources */,
 				01F7738E25688A9400AC5263 /* Hub_lib.mm in Sources */,
 				01F7739525688B2600AC5263 /* BLE_Central.swift in Sources */,
+				019D880F257098EC00940830 /* ExampleWrapper.cpp in Sources */,
 				01F773D0256B029300AC5263 /* HubCPP.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
