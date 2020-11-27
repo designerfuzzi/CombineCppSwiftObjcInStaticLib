@@ -6,7 +6,7 @@
 extern "C" int myCppFunction(const char * s)
 {
     // Create an instance of Example, defined in the library
-    // and call getInt() on it, return result.
+    // and call getLen() on it, return result.
     Example *c = new Example(s);
     return c->getLen();
 }

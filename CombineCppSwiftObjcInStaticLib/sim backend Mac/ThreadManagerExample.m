@@ -72,7 +72,7 @@ static const double kThreadPriority = 1.0;
 -(void)setLooptime:(uint64_t)looptime {
     if (looptime<10) return;
     @synchronized (self) {
-        _looptime = looptime
+        _looptime = looptime;
     }
 }
 @end
