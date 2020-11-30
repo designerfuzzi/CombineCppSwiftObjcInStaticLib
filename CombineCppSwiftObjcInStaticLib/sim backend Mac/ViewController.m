@@ -16,19 +16,19 @@
 @implementation ViewController {
     NSImageView *imgView;
     id<NSObject> keepfront;
+    pid_t lastFocusedPID;
 }
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     // Do any additional setup after loading the view.
     NSButton *btn = [NSButton buttonWithTitle:@"run simple central" target:self action:@selector(run_simple_central:)];
-    btn.frame = CGRectMake(100, 100, 200, 50);
+    btn.frame = CGRectMake(50, 0, 200, 50);
     btn.layer.backgroundColor = NSColor.orangeColor.CGColor;
     btn.layer.cornerRadius = 5.0f;
     [self.view addSubview:btn];
     
-    NSRect rect = CGRectMake(0, 0, 100, 100);
+    NSRect rect = CGRectMake(0, 0, 48, 48);
     imgView = [[NSImageView alloc] initWithFrame:rect];
     imgView.image = nil;
     [self.view addSubview:imgView];
@@ -65,11 +65,50 @@
 }
 
 -(void)watcher:(NSNotification*)note {
-    pid_t pid = [note.userInfo[@"focusedPID"] intValue];
-    NSRunningApplication *app = [NSRunningApplication runningApplicationWithProcessIdentifier:pid];
+    lastFocusedPID = [note.userInfo[@"focusedPID"] intValue];
+    NSRunningApplication *app = [NSRunningApplication runningApplicationWithProcessIdentifier:lastFocusedPID];
     dispatch_async(dispatch_get_main_queue(), ^{
         self->imgView.image = app.icon;
     });
+    [self getAvailableWindows];
+}
+
+-(void)getAvailableWindows {
+    NSString *winNumberKey = (__bridge NSString*)kCGWindowNumber;
+    NSString *ownerPIDKey = (__bridge NSString*)kCGWindowOwnerPID;
+    //NSString *ownerNameKey = (__bridge NSString*)kCGWindowOwnerName;
+    NSString *winNameKey = (__bridge NSString*)kCGWindowName;
+    NSString *winBoundsKey = (__bridge NSString*)kCGWindowBounds;
+    CFArrayRef windowList = CGWindowListCopyWindowInfo(kCGWindowListOptionOnScreenOnly | kCGWindowListExcludeDesktopElements, kCGNullWindowID);
+   
+    for (int i=0; i < CFArrayGetCount(windowList); i++) {
+       
+        CFDictionaryRef windict = CFArrayGetValueAtIndex(windowList, i);
+        NSDictionary *dict = (__bridge NSDictionary *)windict;
+        pid_t winOwnerPID = (pid_t)[dict[ownerPIDKey] intValue];
+        
+        if (winOwnerPID == lastFocusedPID) {
+            //NSString* winOwnerName = (NSString*)dict[ownerNameKey];
+            //CGWindowID windowNumber = (CGWindowID)[dict[winNumberKey] intValue];
+            NSInteger winNumber = (NSInteger)[dict[winNumberKey] integerValue];
+            NSString* winName = (NSString*)dict[winNameKey];
+            
+            CGRect rect;
+            CGRectMakeWithDictionaryRepresentation((__bridge CFDictionaryRef)dict[winBoundsKey], &rect);
+            NSString *rectStr = [NSString stringWithFormat:@"{x%0.f,y%0.f,w%0.f,h%0.f}", rect.origin.x, rect.origin.y, rect.size.width, rect.size.height];
+            NSLog(@"window '%@' %@ %ld", winName, rectStr, winNumber);
+            
+            // works only for your own windows
+            // dispatch_async(dispatch_get_main_queue(), ^{
+            //     NSWindow * window = [NSApp windowWithWindowNumber:winNumber];
+            //     CGWindowID window_id = (CGWindowID)[window windowNumber];
+            //     NSString *title = window.title;
+            //     NSLog(@"title=%@ %p %u",title, window, window_id);
+            // });
+            
+            break; // the first one is enough
+        }
+    }
 }
 
 - (IBAction)run_simple_central:(id)sender {
