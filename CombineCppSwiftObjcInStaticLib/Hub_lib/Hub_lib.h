@@ -24,6 +24,7 @@
 
 //@class BLE_Central; // pre-declaration of a later fully declared Class.
 // as we moved the property into .m file we dont need it here.
+extern char global_sensor_data_buf[300];
 
 @interface Hub_lib : NSObject
 
@@ -31,7 +32,7 @@
 //@property BLE_Central *ble; // placed in .m interface extension instead.
 
 -(void)run_central;
+-(int)_init_and_test;
 
 @end
-
 

@@ -50,6 +50,7 @@ class BLE_Central: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
         
         // do crazy stuff with centralManager here
         
+        os_log("%u %u", global_sensor_data_buf.0, global_sensor_data_buf.3)
     }
     
 }

@@ -15,6 +15,8 @@
 #endif
 #import "HubCPP.h"
 
+char global_sensor_data_buf[300] = {};
+
 @interface Hub_lib ()
 @property BLE_Central *ble_central;
 @end;
@@ -27,6 +29,8 @@
     return self;
 }
 -(void)run_central {
+    global_sensor_data_buf[3] = 22;
+    
     [_ble_central run_central];
     SomeCPPClass *cpp = new SomeCPPClass(@"justSomeObject",2);
     unsigned int idx = cpp->getCurrentIdx();

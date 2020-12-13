@@ -8,3 +8,5 @@
 int myCppFunction(const char * s);
 
 const char *getInCppAndOutOfCpp(const char * s);
+
+extern char global_sensor_data_buf[300];
