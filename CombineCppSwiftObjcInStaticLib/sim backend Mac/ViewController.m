@@ -33,11 +33,17 @@
     imgView.image = nil;
     [self.view addSubview:imgView];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(watcher:) name:@"focusedBundleIdentifierNotification" object:nil];
     
     _manager = [[ThreadManagerExample alloc] init];
     [_manager start];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(watcher:) name:@"focusedBundleIdentifierNotification" object:nil];
+    
+    NSButton *colorBtn = [NSButton buttonWithTitle:@"openColorPanel" target:self action:@selector(openColorPanel)];
+    colorBtn.frame = CGRectMake(50, 50, 200, 50);
+    colorBtn.layer.backgroundColor = NSColor.orangeColor.CGColor;
+    colorBtn.layer.cornerRadius = 5.0f;
+    [self.view addSubview:colorBtn];
     
     
     keepfront = [[NSNotificationCenter defaultCenter] addObserverForName:NSApplicationDidResignActiveNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
@@ -56,6 +62,21 @@
         //kCGDesktopWindowLevel
         
     }];
+}
+-(void)openColorPanel {
+    @autoreleasepool {
+        NSColorPanel *colorPanel = [NSColorPanel sharedColorPanel];
+        [colorPanel setTarget:self];
+        [colorPanel setAction:@selector(changeColor:)];
+        [NSColorPanel setPickerMode:NSColorPanelModeWheel];
+        [NSApp orderFrontColorPanel:colorPanel];
+    }
+}
+-(void)changeColor:(id)sender {
+    if ([sender isKindOfClass:NSColorPanel.class]) {
+        NSColor *c =  ((NSColorPanel*)sender).color;
+        NSLog(@"Color r%f g%f b%f",c.redComponent, c.greenComponent, c.blueComponent);
+    }
 }
 
 -(void)dealloc {

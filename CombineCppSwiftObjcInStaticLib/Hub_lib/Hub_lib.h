@@ -32,7 +32,6 @@ extern char global_sensor_data_buf[300];
 //@property BLE_Central *ble; // placed in .m interface extension instead.
 
 -(void)run_central;
--(int)_init_and_test;
 
 @end
 
