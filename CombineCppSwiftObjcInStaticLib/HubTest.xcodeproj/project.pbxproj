@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0156EAF525786BFB004A62AC /* libHub_lib_mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 019D87DB256C67C300940830 /* libHub_lib_mac.a */; };
+		0156EAFB25786D28004A62AC /* Hub_lib.h in Sources */ = {isa = PBXBuildFile; fileRef = 01F7738C25688A9400AC5263 /* Hub_lib.h */; };
+		0156EAFC25786D4B004A62AC /* Hub_lib.h in Sources */ = {isa = PBXBuildFile; fileRef = 01F7738C25688A9400AC5263 /* Hub_lib.h */; };
 		019D87BD256C675E00940830 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 019D87BC256C675E00940830 /* AppDelegate.m */; };
 		019D87C0256C675E00940830 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 019D87BF256C675E00940830 /* ViewController.m */; };
 		019D87C2256C675F00940830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 019D87C1256C675F00940830 /* Assets.xcassets */; };
@@ -16,7 +19,6 @@
 		019D87D3256C67C300940830 /* BLE_Central.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F7739425688B2600AC5263 /* BLE_Central.swift */; };
 		019D87D4256C67C300940830 /* HubCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = 01F773CF256B029300AC5263 /* HubCPP.mm */; };
 		019D87D7256C67C300940830 /* Hub_lib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01F7738C25688A9400AC5263 /* Hub_lib.h */; };
-		019D87DC256C683E00940830 /* libHub_lib_mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 019D87DB256C67C300940830 /* libHub_lib_mac.a */; };
 		019D87E1256C69A300940830 /* MakeProjectSwiftCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019D87E0256C69A300940830 /* MakeProjectSwiftCompatible.swift */; };
 		019D87E4256C6BDA00940830 /* BLE.mm in Sources */ = {isa = PBXBuildFile; fileRef = 019D87E2256C6BDA00940830 /* BLE.mm */; };
 		019D87E8256C760500940830 /* ThreadManagerExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 019D87E7256C760500940830 /* ThreadManagerExample.m */; };
@@ -41,12 +43,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		019D87DD256C683E00940830 /* PBXContainerItemProxy */ = {
+		0156EAF925786D06004A62AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 01F773012567394A00AC5263 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 019D87D0256C67C300940830;
-			remoteInfo = "Hub_lib mac";
+			remoteInfo = Hub_lib_mac;
 		};
 		01F7739A25688F3200AC5263 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -131,7 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				019D87DC256C683E00940830 /* libHub_lib_mac.a in Frameworks */,
+				0156EAF525786BFB004A62AC /* libHub_lib_mac.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +265,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				019D87DE256C683E00940830 /* PBXTargetDependency */,
+				0156EAFA25786D06004A62AC /* PBXTargetDependency */,
 			);
 			name = "sim backend Mac";
 			productName = "sim backend Mac";
@@ -394,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0156EAFB25786D28004A62AC /* Hub_lib.h in Sources */,
 				019D87E8256C760500940830 /* ThreadManagerExample.m in Sources */,
 				019D87E4256C6BDA00940830 /* BLE.mm in Sources */,
 				019D87C0256C675E00940830 /* ViewController.m in Sources */,
@@ -419,6 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0156EAFC25786D4B004A62AC /* Hub_lib.h in Sources */,
 				01F7739E2568976900AC5263 /* MakeProjectSwiftCompatible.swift in Sources */,
 				01F77377256889EB00AC5263 /* ViewController.m in Sources */,
 				01F77371256889EB00AC5263 /* AppDelegate.m in Sources */,
@@ -443,10 +447,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		019D87DE256C683E00940830 /* PBXTargetDependency */ = {
+		0156EAFA25786D06004A62AC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 019D87D0256C67C300940830 /* Hub_lib_mac */;
-			targetProxy = 019D87DD256C683E00940830 /* PBXContainerItemProxy */;
+			targetProxy = 0156EAF925786D06004A62AC /* PBXContainerItemProxy */;
 		};
 		01F7739B25688F3200AC5263 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -497,6 +501,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.darkfader.sim-backend-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -520,6 +525,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.darkfader.sim-backend-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -539,6 +545,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -563,6 +570,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -630,7 +638,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -682,7 +690,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -699,8 +708,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.darkfader.sim-backend-UI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				STRIP_SWIFT_SYMBOLS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "sim backend UI/sim backend UI-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -721,8 +732,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.darkfader.sim-backend-UI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				STRIP_SWIFT_SYMBOLS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "sim backend UI/sim backend UI-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -741,8 +754,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				STRIP_SWIFT_SYMBOLS = YES;
 				SUPPORTS_MACCATALYST = YES;
@@ -765,8 +780,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				STRIP_SWIFT_SYMBOLS = YES;
 				SUPPORTS_MACCATALYST = YES;
